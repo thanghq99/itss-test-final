@@ -17,16 +17,16 @@ function MainComponent() {
 
   return (
     <div style={{margin:20}}>
-       <div style={{marginTop:15}}>
+       <div style={{marginTop:30}}>
        学生一覧: [Huyen,Hoa,Hung,Long]
        </div>
         <div style={{marginTop:15}}>
         追加する名前を入力してください：
         </div>
-        <div style={{marginTop:15}}>
+        <div style={{marginTop:15, marginLeft: 30}}>
             <input type="text" value={input} onChange={handleChange} />
         </div>
-        <div style={{marginTop:15}}>
+        <div style={{marginTop:15, marginLeft: 200}}>
             <button onClick={onClickHandler}>
             確認
             </button>
