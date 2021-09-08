@@ -35,9 +35,22 @@ function MainComponent() {
         追加する名前: {input}
         </div>
         <div style={{marginTop:15}}>
-        {/* 新しい一覧：[{names.maps( name => name
-            )}] */}
-            新しい一覧：{names}
+            新しい一覧：
+            {names.map((i,index)=>{
+            if(index == 0)
+            {
+                return(
+                    <span>[{i},</span>
+                )} else if(index == names.length -1){
+                return(
+                    <span>{i}]</span>
+                )
+            } else{
+                return(
+                    <span>{i},</span>
+                )
+            }
+        } )}
         </div>
     </div>
   );
